@@ -11,7 +11,7 @@ import { logger } from '../utils/logger.js';
 export default {
   name: Events.GuildMemberAdd,
   once: false,
-  
+
   async execute(member) {
     try {
         const { guild, user } = member;
@@ -59,7 +59,7 @@ export default {
                         .setThumbnail(user.displayAvatarURL())
                         .addFields(
                             { name: 'User', value: `${user.tag} (${user.id})`, inline: true },
-                            { name: 'Member Count', value: guild.memberCount.toString(), inline: true }
+                            { name: '🌸 Members & Bots', value: guild.memberCount.toString(), inline: true }
                         )
                         .setTimestamp()
                         .setFooter({ text: embedFooter });
