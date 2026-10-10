@@ -9,7 +9,7 @@ import botConfig from '../config/bot.js';
 export const COUNTER_TYPE_CONFIG = {
   members: {
     label: 'Members + Bots',
-    baseName: 'Members & Bots',
+    baseName: '🔊 🌸 ┆ Members:',
     emoji: '👥'
   },
   members_only: {
